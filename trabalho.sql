@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13/06/2023 às 23:58
+-- Tempo de geração: 14/06/2023 às 01:27
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -33,6 +33,13 @@ CREATE TABLE `cliente` (
   `telefone_cliente` decimal(10,0) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_swedish_ci;
 
+--
+-- Despejando dados para a tabela `cliente`
+--
+
+INSERT INTO `cliente` (`cod_cliente`, `nome_cliente`, `telefone_cliente`) VALUES
+(1, 'Joao vitor', 996847124);
+
 -- --------------------------------------------------------
 
 --
@@ -43,6 +50,13 @@ CREATE TABLE `farmaceutico` (
   `cod_farmaceutico` int(11) NOT NULL,
   `nome_farmaceutico` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_swedish_ci;
+
+--
+-- Despejando dados para a tabela `farmaceutico`
+--
+
+INSERT INTO `farmaceutico` (`cod_farmaceutico`, `nome_farmaceutico`) VALUES
+(1, 'Ana Paula');
 
 -- --------------------------------------------------------
 
@@ -57,6 +71,14 @@ CREATE TABLE `produto` (
   `qtde_produto` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_swedish_ci;
 
+--
+-- Despejando dados para a tabela `produto`
+--
+
+INSERT INTO `produto` (`cod_produto`, `nome_produto`, `valor_produto`, `qtde_produto`) VALUES
+(1, 'dorflex', 9, 1),
+(3, 'dorflex', 9.9, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -70,6 +92,33 @@ CREATE TABLE `receita` (
   `cod_cliente` int(11) NOT NULL,
   `valor` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_swedish_ci;
+
+--
+-- Despejando dados para a tabela `receita`
+--
+
+INSERT INTO `receita` (`cod_receita`, `cod_produto`, `cod_farmaceutico`, `cod_cliente`, `valor`) VALUES
+(1, 1, 1, 1, 10);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `cod` int(11) NOT NULL,
+  `usuario` varchar(20) NOT NULL,
+  `senha` varchar(32) NOT NULL,
+  `email` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_swedish_ci;
+
+--
+-- Despejando dados para a tabela `usuario`
+--
+
+INSERT INTO `usuario` (`cod`, `usuario`, `senha`, `email`) VALUES
+(1, 'joaovitor', '827ccb0eea8a706c4c34a16891f84e7b', 'vitorjoao.vj57@gmail.com');
 
 --
 -- Índices para tabelas despejadas
@@ -103,6 +152,12 @@ ALTER TABLE `receita`
   ADD KEY `receita_ibfk_3` (`cod_cliente`);
 
 --
+-- Índices de tabela `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`cod`);
+
+--
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
@@ -110,25 +165,31 @@ ALTER TABLE `receita`
 -- AUTO_INCREMENT de tabela `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `cod_cliente` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `cod_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `farmaceutico`
 --
 ALTER TABLE `farmaceutico`
-  MODIFY `cod_farmaceutico` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `cod_farmaceutico` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `produto`
 --
 ALTER TABLE `produto`
-  MODIFY `cod_produto` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `cod_produto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `receita`
 --
 ALTER TABLE `receita`
-  MODIFY `cod_receita` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `cod_receita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT de tabela `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Restrições para tabelas despejadas
