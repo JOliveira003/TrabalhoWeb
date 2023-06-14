@@ -26,11 +26,11 @@
                 <img src="../VIEW/imagens/iconefarmacia.png"  width="60" height="65">
             </a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="\lpbcct2php2023\VIEW\operador\lstoperador2.php">Operador</a></li>
+                <li><a href="\trabalhoweb\VIEW\cliente\listarcliente.php">Cliente</a></li>
                 <li><a href="../operador/lstoperador2.php">Máquinas</a></li>
                 <li><a href="collapsible.html">Equipamentos</a></li>
                 <li><a href="/lpbcct2php2023/VIEW/area/lstarea.php">Area</a></li>
-                <li><a href="..\trabalhoweb\VIEW\logout.php">Logout</a></li>
+                <li><a href="\TrabalhoWeb\VIEW\logout.php">Logout</a></li>
             </ul>
         </div>
     </nav>
