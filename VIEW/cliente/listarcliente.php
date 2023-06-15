@@ -9,6 +9,8 @@
 ?>
 
 
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -32,7 +34,7 @@
             <th>NOME</th>
             <th>TELEFONE</th>
             <th>FUNÇÃO
-                <a class="btn-floating btn-small waves-effect waves-light green" onclick="JavaScript:location.href='insarea.php'">
+                <a class="btn-floating btn-small waves-effect waves-light green" onclick="JavaScript:location.href='inserircliente.php'">
                     <i class="material-icons">add</i>
                 </a>
             </th>
@@ -69,11 +71,10 @@
 
 </html>
 
-
 <script>
-    function remover(id) {
-        if (confirm('Excluir o Area ' + id + '?')) {
-            location.href = 'remarea.php?id=' + id;
+    function remover(cod_cliente) {
+        if (confirm('Excluir o cliente ' + cod_cliente + '?')) {
+            location.href = 'removercliente.php?cod_cliente=' + cod_cliente;
         }
     }
 </script>

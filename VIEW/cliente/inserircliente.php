@@ -20,44 +20,24 @@
 <body>
     <?php
     include_once '../menu.php';
-    include_once  'D:\xampp\htdocs\trabalhoweb\BLL\blltipoarea.php';
+    include_once  'D:\xampp\htdocs\trabalhoweb\BLL\bllcliente.php';
     ?>
     <div class="container indigo lighten-3 black-text col s12">
         <div class="center grey col s12">
             <h1>Inserir Novo Cliente</h1>
         </div>
-
         <div class="row">
             <form action="recinscliente.php" method="POST" id="frmInscliente" name="frmInscliente" class="col s12">
 
                 <div class="input-field col s8">
-                    <label for="lblNome" class="black-text bold">Informe o Nome:</label>
-                    <input id="txt_nome" name="txtNome" type="text">
+                    <label for="nome" class="black-text bold">Informe o Nome:</label>
+                    <input id="nome" name="nome" type="text">
                 </div>
 
                 <div class="input-field col s8">
-                    <select cod_cliente="slcTipo" name="slcTipo">
-                        <option value="" disabled selected>Escolha um Tipo Area</option>
-                        <?php  // carregar lista no select option
-                           $bll = new \bll\bllTipoArea();
-                           $lstTipoArea = $bll->Select();
-                        ?>
-                        <?php
-                           foreach ($lstTipoArea as $tipoArea) {
-                        ?>
-                            <option value="<?php echo $tipoArea->getId(); ?>"><?php echo $tipoArea->getDescricao(); ?></option>
-                        <?php
-                          }
-                        ?>
-                    </select>
-                    <label for="lbltipo" class="black-text bold">Informe o Tipo:</label>
+                    <label for="telefone" class="black-text bold">Informe o Telefone:</label>
+                    <input id="telefone" name="telefone" type="number">
                 </div>
-
-                <div class="input-field col s8">
-                    <label for="lblHectares" class="black-text bold">Informe o tamnho em Hectares:</label>
-                    <input id="txt_Hectares" name="txtHectares" type="text">
-                </div>
-
                 <div class="grey darken-2 center col s12">
                     <br />
                     <button class="btn waves-effect waves-light green" type="submit" name="btnEnviar">Gravar
@@ -65,9 +45,6 @@
                     </button>
                     <button class="btn waves-effect waves-light red" type="reset" name="btnLimpar">Limpar
                         <i class="material-icons right">clear_all</i>
-                    </button>
-                    <button class="btn waves-effect waves-light blue" type="button" name="btnVoltar" onclick="JavaScript:location.href='lstoperador2.php'">Voltar
-                        <i class="material-icons right">arrow_back</i>
                     </button>
                     <br />
                     <br />
