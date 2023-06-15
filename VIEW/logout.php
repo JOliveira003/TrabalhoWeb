@@ -3,5 +3,5 @@
 
     unset($_SESSION['login']);
 
-    Header("location: /VIEW/index.php"); 
+    Header("location: ../VIEW/index.php"); 
 ?>

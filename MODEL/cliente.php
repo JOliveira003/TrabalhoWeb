@@ -23,7 +23,7 @@
         public function getTelefone() {
             return $this->telefone; 
         }
-        public function setTelefone(string $telefone){
+        public function setTelefone(int $telefone){
             $this->telefone = $telefone; 
         }
    }

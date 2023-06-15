@@ -19,7 +19,7 @@
     <title>Sistema de Farmacia</title>
 </head>
 
-<body>
+<body style="background-color: #b2ebf2;">
     <nav>
         <div class="nav-wrapper cyan darken-2">
             <a href="#" class="brand-logo right">
@@ -34,7 +34,8 @@
             </ul>
         </div>
     </nav>
-    <?php include_once 'footer.php' ?>
 </body>
 
+
+<?php include_once 'footer.php' ?>
 </html>
