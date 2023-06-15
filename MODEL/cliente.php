@@ -2,29 +2,29 @@
    namespace MODEL; 
 
    class cliente{
-        private ?int $cod; 
-        private ?string $nome; 
-        private ?int $telefone; 
+        private ?int $cod_cliente; 
+        private ?string $nome_cliente; 
+        private ?int $telefone_cliente; 
         
         public function __construct() {   
         }
-        public function getCod() {
-            return $this->cod; 
+        public function getCod_cliente() {
+            return $this->cod_cliente; 
         }
-        public function setCod(int $cod){
-            $this->cod = $cod; 
+        public function setCod_cliente(int $cod_cliente){
+            $this->cod_cliente = $cod_cliente; 
         }
-        public function getNome() {
-            return $this->nome; 
+        public function getNome_cliente() {
+            return $this->nome_cliente; 
         }
-        public function setNome(string $nome){
-            $this->nome = $nome; 
+        public function setNome_cliente(string $nome_cliente){
+            $this->nome_cliente = $nome_cliente; 
         }
-        public function getTelefone() {
-            return $this->telefone; 
+        public function getTelefone_cliente() {
+            return $this->telefone_cliente; 
         }
-        public function setTelefone(int $telefone){
-            $this->telefone = $telefone; 
+        public function setTelefone_cliente(int $telefone_cliente){
+            $this->telefone_cliente = $telefone_cliente; 
         }
    }
 

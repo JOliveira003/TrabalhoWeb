@@ -3,20 +3,20 @@
     use DAL\dalcliente; 
     include_once '../../DAL/dalcliente.php';
     
-    class bllOperador {
+    class bllcliente {
         public function Select (){
             $dal = new  \Dal\dalcliente(); 
             return $dal->Select();
         }
 
-        public function SelectID (int $id){
+        public function SelectCod_cliente (int $cod_cliente){
             $dal = new  \Dal\dalcliente(); 
-            return $dal->SelectID($id);
+            return $dal->SelectCod_cliente($cod_cliente);
         }
         
-        public function SelectNome(string $nome){
+        public function SelectNome_cliente(string $nome_cliente){
             $dalcliente = new dalcliente(); 
-            return $dalcliente->SelectNome($nome);
+            return $dalcliente->SelectNome_cliente($nome_cliente);
         }
 
         public function Insert (\MODEL\cliente $cliente){
@@ -29,9 +29,9 @@
            $dal->Update($cliente);         
         }
 
-        public function Delete (int $id){
+        public function Delete (int $cod_cliente){
             $dal = new \DAL\dalcliente(); 
-            $dal->Delete($id);           
+            $dal->Delete($cod_cliente);           
          }
     }
 
