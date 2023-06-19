@@ -17,7 +17,7 @@ use MODEL\cliente;
           $con = Conexao::desconectar();
                   
           foreach($result as $linha){
-               $operador = new \MODEL\cliente();
+               $cliente = new \MODEL\cliente();
 
                $cliente->setCod_cliente($linha['cod_cliente']); 
                $cliente->setNome_cliente($linha['nome_cliente']);

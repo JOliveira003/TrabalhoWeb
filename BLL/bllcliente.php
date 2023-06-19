@@ -4,7 +4,7 @@
     include_once '../../DAL/dalcliente.php';
     
     class bllcliente {
-        public function Select (){
+        public function Select(){
             $dal = new  \Dal\dalcliente(); 
             return $dal->Select();
         }
