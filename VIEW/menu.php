@@ -27,15 +27,12 @@
             </a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li><a href="\trabalhoweb\VIEW\cliente\listarcliente.php">Cliente</a></li>
-                <li><a href="../operador/lstoperador2.php">Máquinas</a></li>
-                <li><a href="collapsible.html">Equipamentos</a></li>
-                <li><a href="/lpbcct2php2023/VIEW/area/lstarea.php">Area</a></li>
+                <li><a href="../operador/lstoperador2.php">Farmaceutico</a></li>
+                <li><a href="collapsible.html">Produto</a></li>
+                <li><a href="/lpbcct2php2023/VIEW/area/lstarea.php">Receita</a></li>
                 <li><a href="\TrabalhoWeb\VIEW\logout.php">Logout</a></li>
             </ul>
         </div>
     </nav>
 </body>
-
-
-<?php include_once 'footer.php' ?>
 </html>

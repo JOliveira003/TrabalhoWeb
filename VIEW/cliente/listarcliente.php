@@ -33,7 +33,7 @@
             <th>CODIGO</th>
             <th>NOME</th>
             <th>TELEFONE</th>
-            <th>FUNÇÃO
+            <th>
                 <a class="btn-floating btn-small waves-effect waves-light green" onclick="JavaScript:location.href='inserircliente.php'">
                     <i class="material-icons">add</i>
                 </a>
@@ -48,14 +48,14 @@
                 <td><?php echo $cliente['telefone_cliente']; ?></td>
                 <td>
                     <a class="btn-floating btn-small waves-effect waves-light blue" onclick="JavaScript:location.href='detcliente.php?id=' + 
-                           <?php echo $cliente->getCod(); ?>">
+                           <?php echo $cliente->getCod_cliente(); ?>">
                         <i class="material-icons">details</i>
                     </a>
                     <a class="btn-floating btn-small waves-effect waves-light orange" onclick="JavaScript:location.href='edtcliente.php?id=' + 
-                           <?php echo $cliente->getCod(); ?>">
+                           <?php echo $cliente->getCod_cliente(); ?>">
                         <i class="material-icons">edit</i>
                     </a>
-                    <a class="btn-floating btn-small waves-effect waves-light red" onclick="JavaScript:remover(<?php echo $cliente->getCod(); ?>)">
+                    <a class="btn-floating btn-small waves-effect waves-light red" onclick="JavaScript:remover(<?php echo $cliente->getCod_cliente(); ?>)">
                         <i class="material-icons">delete_forever</i>
                     </a>
                 </td>
