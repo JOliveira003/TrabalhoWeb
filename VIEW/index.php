@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/VIEW/imagens/iconefarmacia.png">
+    <link rel="icon" href="D:\xampp\htdocs\trabalhoweb\VIEW\imagens\iconefarmacia.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Login</title>
     <link href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" rel="stylesheet" id="bootstrap-css">

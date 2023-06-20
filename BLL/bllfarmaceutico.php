@@ -10,7 +10,7 @@
         }
         public function SelectCod_farmaceutico (int $cod_farmaceutico){
             $dal = new  \Dal\dalfarmaceutico(); 
-            return $dal->SelectCod_farmaceuticoe($cod_farmaceutico);
+            return $dal->SelectCod_farmaceutico($cod_farmaceutico);
         }
         public function SelectNome_farmaceutico(string $nome_farmaceutico){
             $dalfarmaceutico = new dalfarmaceutico(); 

@@ -44,7 +44,7 @@ use MODEL\cliente;
             return $cliente; 
         }
 
-        public function SelectNome(string $nome_cliente){
+        public function SelectNome_cliente(string $nome_cliente){
 
             $sql = "select * from cliente WHERE nome like  '%" . $nome_cliente .  "%' order by nome;";
   

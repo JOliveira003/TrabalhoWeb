@@ -9,7 +9,7 @@ if (isset($_GET['busca']))
 else
     $busca = null;
 
-echo "Busca: " . $busca . "<br>";
+echo "" . $busca . "";
 
 $bll = new BLL\bllcliente();
 
@@ -29,7 +29,6 @@ else
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 
     <title>Listar Clientes</title>
 </head>
@@ -57,10 +56,6 @@ else
                 <td><?php echo $cliente->getNome_cliente(); ?></td>
                 <td><?php echo $cliente->getTelefone_cliente(); ?></td>
                 <td>
-                    <a class="btn-floating btn-small waves-effect waves-light blue" onclick="JavaScript:location.href='detcliente.php?id=' + 
-               <?php echo $cliente->getCod_cliente(); ?>">
-                        <i class="material-icons">details</i>
-                    </a>
                     <a class="btn-floating btn-small waves-effect waves-light orange" onclick="JavaScript:location.href='edtcliente.php?id=' + 
                <?php echo $cliente->getCod_cliente(); ?>">
                         <i class="material-icons">edit</i>
