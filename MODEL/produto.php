@@ -11,7 +11,7 @@ class produto {
     }
     
     public function getCod_produto(){
-        return $this->cod_produtp; 
+        return $this->cod_produto; 
     }
     public function setCod_produto(int $cod_produto){
         $this->cod_produto = $cod_produto; 

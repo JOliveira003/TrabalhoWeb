@@ -8,9 +8,6 @@ if (isset($_GET['busca']))
     $busca = $_GET['busca'];
 else
     $busca = null;
-
-
-
 $bll = new BLL\bllfarmaceutico();
 
 if ($busca == null)
