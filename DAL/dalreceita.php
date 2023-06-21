@@ -16,7 +16,7 @@
           foreach($result as $linha){
                         
             $receita = new \MODEL\receita();
-            echo $linha['valor_receita'];
+            echo $linha['valor'];
             $receita->setCod_receita($linha['cod_receita']);
             $receita->setCod_produto($linha['cod_produto']);  
             $receita->setCod_farmaceutico($linha['cod_farmaceutico']);
@@ -50,6 +50,16 @@
 
         }
 
+        public function Insert(\MODEL\receita $receita){
+          $con = Conexao::conectar(); 
+          $sql = "INSERT INTO receita (cod_produto, cod_farmaceutico, cod_cliente, valor) 
+                 VALUES  ('{$receita->getCod_produto()}', '{$receita->getCod_farmaceutico()}', '{$receita->getCod_cliente()}', '{$receita->getValor()}');";
+   
+          $result = $con->query($sql); 
+          $con = Conexao::desconectar();
+          return $result; 
+
+      }
 
         public function Update(\MODEL\receita $receita){
           $sql = "UPDATE receita SET cod_produto=?, cod_farmaceutico=?, cod_cliente=?, valor=? WHERE cod_receita=?";
@@ -61,5 +71,16 @@
           $con = Conexao::desconectar();
           return  $result; 
       }
+
+      public function Delete(int $cod_receita){
+        $sql = "DELETE from receita WHERE cod_receita=?";
+
+        $pdo = Conexao::conectar(); 
+        $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION); 
+        $query = $pdo->prepare($sql);
+        $result = $query->execute(array($cod_receita));
+        $con = Conexao::desconectar();
+        return  $result; 
+    }
     }
 ?> 

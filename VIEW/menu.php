@@ -29,7 +29,7 @@
                 <li><a href="\trabalhoweb\VIEW\cliente\listarcliente.php">Cliente</a></li>
                 <li><a href="../farmaceutico/listarfarmaceutico.php">Farmaceutico</a></li>
                 <li><a href="\trabalhoweb\VIEW\produto\listarproduto.php">Produto</a></li>
-                <li><a href="/lpbcct2php2023/VIEW/area/lstarea.php">Receita</a></li>
+                <li><a href="/trabalhoweb/VIEW/receita/listarreceita.php">Receita</a></li>
                 <li><a href="\TrabalhoWeb\VIEW\logout.php">Logout</a></li>
             </ul>
         </div>

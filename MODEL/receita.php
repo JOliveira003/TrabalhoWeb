@@ -40,7 +40,7 @@ class receita{
     }
 
     public function getValor(){
-        return $this->Valor; 
+        return $this->valor; 
     }    
     public function setValor(float $valor){
         $this->valor = $valor; 
