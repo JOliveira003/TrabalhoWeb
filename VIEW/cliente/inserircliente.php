@@ -22,8 +22,8 @@
     include_once '../menu.php';
     include_once  'D:\xampp\htdocs\trabalhoweb\BLL\bllcliente.php';
     ?>
-    <div class="container indigo lighten-3 black-text col s12">
-        <div class="center grey col s12">
+    <div class="container cyan darken-2 black-text col s12">
+        <div class="center cyan darken-1 col s12">
             <h1>Inserir Novo Cliente</h1>
         </div>
         <div class="row">
@@ -38,7 +38,7 @@
                     <label for="telefone" class="black-text bold">Informe o Telefone:</label>
                     <input id="telefone" name="telefone" type="number">
                 </div>
-                <div class="grey darken-2 center col s12">
+                <div class="cyan darken-2 center col s12">
                     <br />
                     <button class="btn waves-effect waves-light green" type="submit" name="btnEnviar">Gravar
                         <i class="material-icons right">save</i>

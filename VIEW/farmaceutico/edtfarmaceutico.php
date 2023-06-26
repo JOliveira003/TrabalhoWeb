@@ -24,8 +24,8 @@ echo $farmaceutico->getNome_farmaceutico();
 
 <body>
     <?php include_once '../menu.php';?>
-    <div class="container teal lighten-5 black-text col s12">
-        <div class="center orange">
+    <div class="container cyan darken-2 black-text col s12">
+        <div class="center cyan darken-1">
             <h1>Editar Farmaceutico</h1>
         </div>
 
@@ -41,7 +41,7 @@ echo $farmaceutico->getNome_farmaceutico();
                     <input cod_farmaceutico="nome" type="text" name="nome" value="<?php echo $farmaceutico->getNome_farmaceutico() ?>">
                     <label for="nome" class="black-text bold">Nome</label>
                 </div>
-                <div class="brown lighten-3 center col s12">
+                <div class="cyan darken-2 center col s12">
                     <br>
                     <button class="waves-effect waves-light btn green" type="submit">
                         Gravar <i class="material-icons">save</i>

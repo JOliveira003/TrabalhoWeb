@@ -24,8 +24,8 @@ echo $cliente->getNome_cliente();
 
 <body>
     <?php include_once '../menu.php';?>
-    <div class="container teal lighten-5 black-text col s12">
-        <div class="center orange">
+    <div class="container cyan darken-2 black-text col s12">
+        <div class="center cyan darken-1">
             <h1>Editar Cliente</h1>
         </div>
 
@@ -45,7 +45,7 @@ echo $cliente->getNome_cliente();
                     <input id="telefone" type="number" name="telefone" value="<?php echo $cliente->getTelefone_cliente() ?>">
                     <label for="aniversario" class="black-text bold">Telefone</label>
                 </div>
-                <div class="brown lighten-3 center col s12">
+                <div class="cyan darken-2 center col s12">
                     <br>
                     <button class="waves-effect waves-light btn green" type="submit">
                         Gravar <i class="material-icons">save</i>

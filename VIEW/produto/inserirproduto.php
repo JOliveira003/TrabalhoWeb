@@ -22,8 +22,8 @@
     include_once '../menu.php';
     include_once  'D:\xampp\htdocs\trabalhoweb\BLL\bllproduto.php';
     ?>
-    <div class="container indigo lighten-3 black-text col s12">
-        <div class="center grey col s12">
+    <div class="container cyan darken-2 black-text col s12">
+        <div class="center cyan darken-1 col s12">
             <h1>Inserir Novo Produto</h1>
         </div>
         <div class="row">
@@ -36,7 +36,7 @@
 
                 <div class="input-field col s8">
                     <label for="valor_produto" class="black-text bold">Informe o Valor:</label>
-                    <input id="valor_produto" name="valor_produto" type="float">
+                    <input id="valor_produto" name="valor_produto" type="number">
                 </div>
 
                 <div class="input-field col s8">
@@ -44,7 +44,7 @@
                     <input id="qtde_produto" name="qtde_produto" type="number">
                 </div>
 
-                <div class="grey darken-2 center col s12">
+                <div class="cyan darken-2 center col s12">
                     <br />
                     <button class="btn waves-effect waves-light green" type="submit" name="btnEnviar">Gravar
                         <i class="material-icons right">save</i>
